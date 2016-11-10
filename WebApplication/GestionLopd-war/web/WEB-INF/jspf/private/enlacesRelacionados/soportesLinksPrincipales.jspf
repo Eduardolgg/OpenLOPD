@@ -1,0 +1,11 @@
+
+<%@ page pageEncoding="UTF-8" %>
+
+<fieldset class="enlacesRelacionados">
+    <legend>Enlaces relacionados</legend>
+    <ul>
+        <li><a href="${appRoot}/privateArea/soportesinventario/soportesInventario.jsp">Inventario de soportes</a></li>
+        <li><a href="${appRoot}/privateArea/regentrada/regentrada.jsp">Registro de entrada de soportes</a></li>
+        <li><a href="${appRoot}/privateArea/regsalida/regsalida.jsp">Registro de salida de soportes</a></li>
+    </ul>
+</fieldset>

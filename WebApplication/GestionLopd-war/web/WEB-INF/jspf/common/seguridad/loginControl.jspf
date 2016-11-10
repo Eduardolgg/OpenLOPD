@@ -1,0 +1,29 @@
+<%--
+    Document   : headSection
+    Created on : 13-feb-2011, 15:04
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<div id="loginControl">
+    <form class="loginForm" name="loginControlForm" action="${appRoot}/publicArea/loginCheck.jsp" method="POST">
+        <input type="hidden" name="timeZone" id="timeZone" value="" />
+        <div id="loginUsuario">
+           <fmt:message bundle="${StandardBundle}" key="label.usuaro" />
+           <input class="loginInput" type="text" name="usuario" value="" size="30" />
+        </div>
+        <div id="loginClave">
+           <fmt:message bundle="${StandardBundle}" key="label.clave" />
+           <input class="loginInput" type="password" name="password" value="" size="30" />
+        </div>
+        <div id="sendButton">
+           <input class="loginButton" type="submit" value="<fmt:message bundle="${StandardBundle}" key="button.acceder" />" name="BAcceder" />
+        </div>
+        <div id="loginRecuperarClave">
+            <a href="${appRoot}/publicArea/lostPass.jsp"><fmt:message bundle="${StandardBundle}" key="label.sinAcceso" /></a>
+        </div>
+    </form>
+</div>
+        <script type="text/javascript">
+            $("#timeZone").val(getTimeZone());
+        </script>

@@ -1,0 +1,25 @@
+<%--
+    Document   : headSection
+    Created on : 22-feb-2011, 20:18
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%@ page pageEncoding="UTF-8" %>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#linkList ul").menu();
+        $("#screenHelp").click(function(){
+            try {                
+                startOnScreenHelp();
+            } catch (exception) {
+                showAppMsg("Esta página no tiene disponible la ayuda en pantalla.");
+            }
+        });
+    });
+</script>
+<div id="linkList">
+    <c:out escapeXml="false" value="${cLinkList.links}" />
+    <div id="screenHelp"><span>Ayuda en pantalla</span></div>
+</div>

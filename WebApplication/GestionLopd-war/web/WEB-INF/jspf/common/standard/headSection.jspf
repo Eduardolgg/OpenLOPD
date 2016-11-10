@@ -1,0 +1,30 @@
+<%--
+    Document   : headSection
+    Created on : 12-feb-2011, 18:45
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="robots" content="all" />
+<fmt:message bundle="${StandardBundle}" key="cssPath" var="cssPath" scope="session" />
+<fmt:message bundle="${StandardBundle}" key="AppRoot" var="appRoot" scope="session" />
+<fmt:message bundle="${StandardBundle}" key="libPath" var="libPath" scope="session" />
+<fmt:message bundle="${StandardBundle}" key="imagePath" var="imagePath" scope="session" />
+<link rel="shortcut icon" href="${appRoot}/favicon.png" type="image/png" />
+<title><fmt:message bundle="${StandardBundle}" key="label.titulo" /></title>
+<link rel="stylesheet" type="text/css" href="${cssPath}/estilos.min.css" />
+<link rel="stylesheet" type="text/css" href="${cssPath}/demo_table.min.css" />
+<link rel="stylesheet" type="text/css" href="${cssPath}/appdefaulth/jquery-ui-1.9.1.custom.min.css" />
+<script type="text/javascript" src="${libPath}/complete.js"></script>
+<script type="text/javascript" language="javascript" src="${libPath}/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="${libPath}/jquery.dataTables.min.js"></script>
+<script src="${libPath}/jquery.jeditable.js" type="text/javascript"></script>
+<script src="${libPath}/jquery-ui.js" type="text/javascript"></script>
+<script type="text/javascript" src="${libPath}/jquery.validate.min.js"></script>
+<script type="text/javascript" src="${libPath}/localization/messages_es.js"></script>
+<script type="text/javascript" language="javascript" src="${libPath}/jGestionLopd.js"></script>
+

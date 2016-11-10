@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="GestionLopd-ejbPU" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/developdb-gestionlopd</jta-data-source>
+    <class>com.jkingii.mail.entities.MailAccount</class>
+    <class>com.jkingii.mail.entities.Message</class>
+    <class>com.jkingii.mail.entities.OutBox</class>
+    <!--<class>com.openlopd.entities.lopd.FicheroPredefinido</class>-->
+    <class>com.openlopd.entities.lopd.RegistroSalidaSoporte</class>
+    <class>com.openlopd.entities.lopd.ProcedimientoHabilitado</class>
+    <class>com.openlopd.entities.lopd.RegistroEntradaSoporte</class>
+    <class>com.openlopd.entities.lopd.Fichero</class>
+    <class>com.openlopd.entities.lopd.Incidencia</class>
+    <class>com.openlopd.entities.lopd.Destinatario</class>
+    <class>com.openlopd.entities.lopd.UnidadesInformacion</class>
+    <class>com.openlopd.entities.lopd.TipoProcedimiento</class>
+    <class>com.openlopd.entities.lopd.Soporte</class>
+    <class>com.openlopd.entities.lopd.PersonaFichero</class>
+    <class>com.openlopd.entities.lopd.TipoActividadPrincipal</class>
+    <class>com.openlopd.entities.lopd.ProcedimientoDisponible</class>
+    <class>com.openlopd.entities.lopd.ModoDestruccion</class>
+    <class>com.openlopd.entities.lopd.ContadorIncidencias</class>
+    <class>com.openlopd.entities.lopd.DocumentoSeguridad</class>
+    <class>com.openlopd.entities.lopd.TipoSoporte</class>
+    <class>com.openlopd.entities.interfaz.OperacionLopd</class>
+    <class>com.openlopd.entities.interfaz.LinkList</class>
+    <class>com.openlopd.entities.documentos.Plantilla</class>
+    <class>com.openlopd.entities.documentos.FileDataBase</class>
+    <class>com.openlopd.entities.empresas.EmpresaSede</class>
+    <class>com.openlopd.entities.empresas.EmpresaAux</class>
+    <class>com.openlopd.entities.empresas.Persona</class>
+    <class>com.openlopd.entities.empresas.Empresa</class>
+    <class>com.openlopd.entities.empresas.EmpresaObservaciones</class>
+    <class>com.openlopd.entities.facturacion.ContadorFactura</class>
+    <class>com.openlopd.entities.facturacion.Factura</class>
+    <class>com.openlopd.entities.facturacion.TipoFormaPago</class>
+    <class>com.openlopd.entities.facturacion.Producto</class>
+    <class>com.openlopd.entities.seguridad.Shadow</class>
+    <class>com.openlopd.entities.seguridad.GruposUsuarios</class>
+    <class>com.openlopd.entities.seguridad.ContratosPermisos</class>
+    <class>com.openlopd.entities.seguridad.ConstantesSeguridad</class>
+    <class>com.openlopd.entities.seguridad.GruposSubEmpresa</class>
+    <class>com.openlopd.entities.seguridad.GestoresEmpresas</class>
+    <class>com.openlopd.entities.seguridad.TiposUsuario</class>
+    <class>com.openlopd.entities.seguridad.EmpresasGrupos</class>
+    <class>com.openlopd.entities.seguridad.PassRecovery</class>
+    <class>com.openlopd.entities.seguridad.ContratosTipoGestor</class>
+    <class>com.openlopd.entities.seguridad.PermisosGrupos</class>
+    <class>com.openlopd.entities.seguridad.ContratosTipo</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <properties>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+  <!--
+  <persistence-unit name="GestionLopd-ejbPU" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/developdb-gestionlopdhistory</jta-data-source>
+    <class>com.openlopd.entities.historicos.seguridad.HistContratosPermisos</class>
+    <class>com.openlopd.entities.historicos.seguridad.HistContratosTipo</class>
+    <class>com.openlopd.entities.historicos.seguridad.HistContratosTipoGestor</class>
+    <class>com.openlopd.entities.historicos.seguridad.HistPermisosGrupos</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>-->
+</persistence>

@@ -1,0 +1,15 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+                        <input type="hidden" name="id" id="id" value="DATAROWID" />
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" class="required" maxlength="50" rel="0"/><br />                        
+                        <label for="descripcion">Descripción</label>
+                        <input type="text" name="descripcion" id="descripcion" class="required" maxlength="255" rel="1"/><br />
+                        <label for="fAlta">Fecha Alta</label>
+                        <input type="text" name="fAlta" id="fAlta" class="dateTimePicker required" rel="2"/><br />                        
+                        <label for="fBaja">Fecha Baja</label>
+                        <input type="text" name="fBaja" id="fBaja" class="dateTimePicker" rel="3"/>
+                        <label for="observaciones">Observaciones</label>
+                        <textarea cols="30" rows="5" id="observaciones" name="observaciones" maxlength="2000"></textarea>
+                        <span class="datafield" style="display:none" rel="4"><a class="table-action-EditData">Edit</a></span>
+			<span class="datafield" style="display:none" rel="5"><a href="/Details/DT_RowId">Details</a></span>

@@ -1,0 +1,16 @@
+<%--
+    Document   : getPersonaContacto
+    Created on : 28-mar-2011
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<h3><span><fmt:message bundle="${StandardBundle}" key="title.personaContacto" /></span></h3>
+<div id="showData">
+    <div class="showDataEntry maxInfo"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.nombre" />:</b> <c:out value="${InfoRegistroBean.perNombre}" /></p></div><br>
+    <div class="showDataEntry medInfo"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.apellido1" />:</b> <c:out value="${InfoRegistroBean.perApellido1}" /></p></div>
+    <div class="showDataEntry medInfo"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.apellido2" />:</b> <c:out value="${InfoRegistroBean.perApellido2}" /></p></div><br>
+    <div class="showDataEntry"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.cargo" />:</b> <c:out value="${InfoRegistroBean.perCargo}" /></p></div><br>
+    <div class="showDataEntry minInfo"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.telefono" />:</b> <c:out value="${InfoRegistroBean.perTel}" /></p></div>
+    <div class="showDataEntry"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.email" />:</b> <c:out value="${InfoRegistroBean.perMail}" /></p></div>
+</div>

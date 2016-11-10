@@ -1,0 +1,48 @@
+<%--
+    Document   : headSection
+    Created on : 25 may 2012
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="robots" content="all" />
+<fmt:message bundle="${StandardBundle}" key="cssPath" var="cssPath" scope="session" />
+<fmt:message bundle="${StandardBundle}" key="AppRoot" var="appRoot" scope="session" />
+<fmt:message bundle="${StandardBundle}" key="libPath" var="libPath" scope="session" />
+<link rel="shortcut icon" href="${appRoot}/favicon.png" type="image/png" />
+<title><fmt:message bundle="${StandardBundle}" key="label.titulo" /></title>
+<%--<link rel="stylesheet" type="text/css" href="${cssPath}/layout-default-latest.min.css" />--%>
+<link rel="stylesheet" type="text/css" href="${cssPath}/demo_table_jui.min.css" />
+<link rel="stylesheet" type="text/css" href="${cssPath}/appdefaulth/jquery-ui-1.10.3.custom.min.css" />
+<link rel="stylesheet" type="text/css" href="${cssPath}/uploadify.min.css" />
+<link rel="stylesheet" type="text/css" href="${cssPath}/jquery.on-screen-help.min.css" />
+<link rel="stylesheet" type="text/css" href="${cssPath}/estilos_p.min.css" />
+
+
+<script type="text/javascript" src="${libPath}/complete.js"></script>
+<script type="text/javascript" language="javascript" src="${libPath}/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="${libPath}/jquery.blockUI.js"></script>
+<script type="text/javascript" language="javascript" src="${libPath}/jquery.dataTables.js"></script>
+<script src="${libPath}/jquery.jeditable.js" type="text/javascript"></script>
+<script src="${libPath}/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="${libPath}/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
+<script type="text/javascript" src="${libPath}/jquery.fancyform.js"></script>
+<script type="text/javascript" src="${libPath}/jquery.validate.min.js"></script>
+<%--//TODO: Que sea en función del idioma del usuario. --%>
+<script type="text/javascript" src="${libPath}/localization/messages_es.js"></script>
+<script type="text/javascript" src="${libPath}/jquery.dataTables.editable.js"></script>
+<script type="text/javascript" src="${libPath}/jquery.uploadify-3.1.min.js"></script>
+<script src="${libPath}/jquery.ui.datepicker-es.js" type="text/javascript"></script>
+<script src="${libPath}/jquery-ui-sliderAccess.js" type="text/javascript"></script>
+<script src="${libPath}/jquery.form.js" type="text/javascript"></script>
+<script src="${libPath}/jquery.ba-resize.min.js" type="text/javascript"></script>
+<script src="${libPath}/jquery.on-screen-help.js" type="text/javascript"></script>
+<%--<script type="text/javascript" src="${libPath}/tinymce/tinymce.min.js"></script>--%>
+
+<%--<script src="${libPath}/jquery.layout-latest.js" type="text/javascript"></script>--%>
+<script type="text/javascript" language="javascript" src="${libPath}/jGestionLopd.js"></script>
+

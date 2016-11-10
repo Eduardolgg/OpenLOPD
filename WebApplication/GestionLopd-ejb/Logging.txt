@@ -1,0 +1,38 @@
+09-feb-2011 22:08:42 com.utils.log.StandardLogger error
+GRAVE: Esto es un error.
+09-feb-2011 22:08:42 com.utils.log.StandardLogger warning
+ADVERTENCIA: Esto es un warning.
+09-feb-2011 22:08:42 com.utils.log.StandardLogger info
+INFO: Esto es un info.
+09-feb-2011 22:08:42 com.utils.log.StandardLogger config
+CONFIG: Esto es un config
+09-feb-2011 22:08:42 com.utils.log.StandardLogger debug
+FINA: Esto es un debug
+10-feb-2011 17:48:57 com.utils.log.StandardLogger error
+GRAVE: Esto es un error.
+10-feb-2011 17:48:57 com.utils.log.StandardLogger warning
+ADVERTENCIA: Esto es un warning.
+10-feb-2011 17:48:57 com.utils.log.StandardLogger info
+INFO: Esto es un info.
+10-feb-2011 17:48:57 com.utils.log.StandardLogger config
+CONFIG: Esto es un config
+10-feb-2011 17:48:57 com.utils.log.StandardLogger debug
+FINA: Esto es un debug
+12-feb-2011 17:36:42 com.utils.log.StandardLogger warning
+ADVERTENCIA: Se ha realizado una identificaci�n negativa para el Usuario [usuario] con la clave [null]
+12-feb-2011 17:36:42 com.utils.log.StandardLogger info
+INFO: java.lang.NullPointerException
+may 24, 2012 7:22:41 PM com.utils.log.StandardLogger warning
+Advertencia: Se ha realizado una identificación negativa para el Usuario [usuario] con la clave [null]
+may 24, 2012 7:22:42 PM com.utils.log.StandardLogger info
+Información: java.lang.NullPointerException
+may 24, 2012 7:23:01 PM com.utils.log.StandardLogger error
+Grave: Esto es un error.
+may 24, 2012 7:23:01 PM com.utils.log.StandardLogger warning
+Advertencia: Esto es un warning.
+may 24, 2012 7:23:01 PM com.utils.log.StandardLogger info
+Información: Esto es un info.
+may 24, 2012 7:23:01 PM com.utils.log.StandardLogger config
+Configurar: Esto es un config
+may 24, 2012 7:23:01 PM com.utils.log.StandardLogger debug
+Detallado: Esto es un debug

@@ -1,0 +1,19 @@
+<%--
+    Document   : getDatosEmpresa
+    Created on : 12-mar-2011
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<h3><span class="formText"><fmt:message bundle="${StandardBundle}" key="title.datosEmpresa" /></span></h3>
+<div id="showData">
+    <div class="showDataEntry minInfo"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.cif" />:</b> <c:out value="${InfoRegistroBean.cif}" /></p></div><br>
+    <div class="showDataEntry"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.razonSocial" />:</b> <c:out value="${InfoRegistroBean.razonSocial}" /></p></div><br>
+    <div class="showDataEntry minInfo"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.telefono" />:</b> <c:out value="${InfoRegistroBean.tel}" /></p></div>
+    <div class="showDataEntry minInfo"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.movil" />:</b> <c:out value="${InfoRegistroBean.movil}" /></p></div>
+    <div class="showDataEntry minInfo"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.fax" />:</b> <c:out value="${InfoRegistroBean.fax}" /></p></div><br>
+    <div class="showDataEntry"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.direccion" />:</b> <c:out value="${InfoRegistroBean.dir}" /></p></div><br>
+    <div class="showDataEntry minInfo"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.cp" />:</b> <c:out value="${InfoRegistroBean.cp}" /></p></div>
+    <div class="showDataEntry"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.provincia" />:</b> <c:out value="${InfoRegistroBean.provinciaDesc}" /></p></div>
+    <div class="showDataEntry"><p class="showText"><b><fmt:message bundle="${StandardBundle}" key="label.localidad" />:</b> <c:out value="${InfoRegistroBean.localidadDesc}" /></p></div>
+</div>

@@ -1,0 +1,18 @@
+<%--
+    Document   : setPersonaContacto
+    Created on : 28-feb-2011, 13:55
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.1
+    Modificaciones:
+        15 de mar de 2011, se elimina marca de campo obligatorio en campos no obligatorios.
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<h3><span><fmt:message bundle="${StandardBundle}" key="title.personaContacto" /></span></h3>
+<div class="formStyle">
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.nombre" />: (*)</span></div><div class="formData"><input id="perNombre" class="formBox" type="text" name="perNombre" value="" maxlength="50" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.apellido1" />: (*)</span></div><div class="formData"><input id="perApellido1" class="formBox" type="text" name="perApellido1" value="" maxlength="50" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.apellido2" />:</span></div><div class="formData"><input id="perApellido2" class="formBox" type="text" name="perApellido2" value="" maxlength="50" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.cargo" />: (*)</span></div><div class="formData"><input id="perCargo" class="formBoxMedio" type="text" name="perCargo" value="" maxlength="50" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.telefono" />:</span></div><div class="formData"><input id="perTel" class="formBoxSmall" type="text" name="perTel"  value="" maxlength="9"/></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.email" />: (*)</span></div><div class="formData"><input id="perMail" class="formBoxMedio" type ="text" name="perMail" value="" maxlength="50"/></div></div>
+</div>

@@ -1,0 +1,43 @@
+<%--
+    Document   : datosEmpresa
+    Created on : 28-feb-2011, 13:55
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.2 16 de mar de 2011
+    Modificaciones:
+       15 de mar de 2011 corregido el identificador del div localidad.
+       16 de mar de 2011, Se añaden los campos para la clave de acceso.
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<jsp:useBean id="localidadesBean" class="com.openlopd.common.ajax.localidades" scope="request" />
+<jsp:setProperty property="*" name="localidadesBean" />
+<h3><span><fmt:message bundle="${StandardBundle}" key="title.datosEmpresa" /></span></h3>
+<div class="formStyle">
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.cif" />: (*)</span></div><div class="formData"><input id="cif" class="formBoxSmall" type="text" name="cif" value="" maxlength="10" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.razonSocial" />: (*)</span></div><div class="formData"><input id="razonSocial" class="formBox" type="text" name="razonSocial" value="" maxlength="100" /></div></div>
+    <jsp:directive.include file="/WEB-INF/jspf/common/seguridad/claves.jspf" />
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.telefono" />: (*)</span></div><div class="formData"><input id="tel" class="formBoxSmall" type="text" name="tel" value="" maxlength="9" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.movil" />:</span></div><div class="formData"><input id="tel" class="formBoxSmall" type="text" name="movil" value="" maxlength="9" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.fax" />:</span></div><div class="formData"><input id="fax" class="formBoxSmall" type="text" name="fax" value="" maxlength="9" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.direccion" />: (*)</span></div><div class="formData"><input id="dir" class="formBox" type="text" name="dir" value="" maxlength="100" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.cp" />: (*)</span></div><div class="formData"><input id="cp" class="formBoxSmall" type="text" name="cp" value="" maxlength="5" /></div></div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.provincia" />: (*)</span></div>
+        <div class="formData">            
+            <select name="provincia" id="provincia">
+                <option selected="selected" value="-1"><fmt:message bundle="${StandardBundle}" key="option.sinAsignar" /></option>
+                <c:forEach items="${localidadesBean.provincias}" var="provincia" >
+                    <c:out escapeXml="false" value="<option value=\"${provincia.id}\">${provincia.provincia}</option>" />
+                </c:forEach>
+            </select>
+        </div>
+    </div>
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.localidad" />: (*)</span></div>
+        <div class="formData">            
+            <div id="destino">
+                <select name="provincia" id="localidad">
+                    <option selected="selected" value="-1"><fmt:message bundle="${StandardBundle}" key="option.sinAsignar" /></option>
+                </select>
+            </div>
+            <div id="cargando" style="display:none; color: green;"><fmt:message bundle="${StandardBundle}" key="alert.cargando" /></div>
+        </div>
+    </div>
+</div>

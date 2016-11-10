@@ -1,0 +1,21 @@
+<%-- 
+    Document   : tiposIncidencias
+    Created on : 27-feb-2013
+    Author     : Eduardo L. García Glez.
+    Description: Enumera los distintos tipos de incidencias disponibles.
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<ul id="ulListadoTiposIncidencias">
+    <li><a class="tipoIncItem" href="#">Pérdida de Soporte</a></li>
+    <li><a class="tipoIncItem" href="#">Robo de Soporte</a></li>
+    <li><a class="tipoIncItem" href="#">Pérdida de equipo portátil</a></li>
+    <li><a class="tipoIncItem" href="#">Robo de equipo portátil</a></li>
+    <li><a class="tipoIncItem" href="#">Recuperación de Datos</a></li>
+    <li><a class="tipoIncItem" href="#">Intrusión en el Sistema</a></li>
+    <li><a class="tipoIncItem" href="#">Acceso no autorizado</a></li>
+    <li><a class="tipoIncItem" href="#">Virus en los equipos</a></li>
+    <li><a class="tipoIncItem" href="#">Uso de software no autorizado</a></li>
+    <li><a class="tipoIncItem" href="#">Contraseñas compartidas</a></li>
+    <li><a class="tipoIncItem" href="#">Desactivación del Registro de Accesos</a></li>
+    <li><a class="tipoIncItem" href="#">Soportes sin Etiquetar o Etiquetados incorrectamente</a></li>
+</ul>

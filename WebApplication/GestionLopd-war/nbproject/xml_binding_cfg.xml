@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='GestionLopd-war' version='1.0'>
+	<schema type='-xmlschema' package='' name='Nota_1_0'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='src/conf/xml-resources/jaxb/Nota_1_0/NOTA v1.0.xsd' origLocation='../../../../Documentos/AGPD/webService/privada/NOTA v1.0.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+</schemas>

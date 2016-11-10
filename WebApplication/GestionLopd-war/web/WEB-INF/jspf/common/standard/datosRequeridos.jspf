@@ -1,0 +1,12 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div id="datosRequeridos">
+    <p><fmt:message bundle="${StandardBundle}" key="alert.datosRequeridos" /></p>
+</div>
+<%-- TODO: ESTILOS InLINE!!!! NOOOO --%>
+<div id="passFormatRequired" style="display: none; color: red;">
+    <p>Por favor verifique que ha añadido la misma contraseña en ambos campos y que su longitud es al menos de 4 caracteres.</p>
+</div>
+<div id="polPrivacidadRequerida" style="display: none; color: red;">
+    <p>Debe aceptar la política de privacidad para poder continuar.</p>
+</div>

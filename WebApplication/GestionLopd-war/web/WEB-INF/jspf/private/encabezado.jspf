@@ -1,0 +1,12 @@
+<%--
+    Document   : encabezado
+    Created on : 13-feb-2011, 08:39
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<jsp:directive.include file="/WEB-INF/jspf/common/seguridad/desconectar.jspf" />
+<div id="logo">
+<h2></h2>
+</div>
+<div id="banner"></div>

@@ -1,0 +1,45 @@
+<%--
+    Document   : headSection
+    Created on : 13-feb-2011, 08:39
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<%--
+<div id="footer">
+    <div class="ulfooter">
+        <h1>Empresa</h1>
+        <ul>
+            <li><a href="${appRoot}/" title="AccessKey: g" accesskey="g"><fmt:message bundle="${StandardBundle}" key="link.laEmpresa" /></a> <!--by <a href="http://www.mezzoblue.com/" class="c">Dave Shea</a>&nbsp;--></li> 
+            <li><a href="${appRoot}/common/privacidad.jsp" title="<fmt:message bundle="${StandardBundle}" key="label.avisoLegal" />"><fmt:message bundle="${StandardBundle}" key="label.avisoLegal" /></a></li>
+            <li><a href="${appRoot}/common/privacidad.jsp" title="<fmt:message bundle="${StandardBundle}" key="label.privacidad" />"><fmt:message bundle="${StandardBundle}" key="label.privacidad" /></a></li>
+        </ul>
+    </div>
+    <div class="ulfooter">
+        <h1>Productos</h1>
+        <ul>
+            <li><a href="${appRoot}/" title="AccessKey: d" accesskey="d"><fmt:message bundle="${StandardBundle}" key="link.caracteristicas" /></a> <!--by <a href="http://www.mezzoblue.com/" class="c">Dave Shea</a>&nbsp;--></li>
+            <li><a href="./publicArea/alta.jsp?tipoPaquete=0">Paquete Básico</a></li>
+            <li><a href="./publicArea/alta.jsp?tipoPaquete=1">Paquete Avanzado</a></li>
+            <li><a href="./publicArea/alta.jsp?tipoPaquete=2">Paquete Premium</a></li>
+            <li><a href="./publicArea/alta.jsp?tipoPaquete=3">Paquete Custom</a></li>
+        </ul>
+    </div>
+    <div class="ulfooter">   
+        <h1>Información</h1>
+        <ul>
+            <li><a href="${appRoot}/" title="AccessKey: e" accesskey="e"><fmt:message bundle="${StandardBundle}" key="link.sobreLOPD" /></a> <!--by <a href="http://www.mezzoblue.com/" class="c">Dave Shea</a>&nbsp;--></li>
+            <li><a href="${appRoot}/" title="AccessKey: f" accesskey="f"><fmt:message bundle="${StandardBundle}" key="link.formacion" /></a> <!--by <a href="http://www.mezzoblue.com/" class="c">Dave Shea</a>&nbsp;--></li>
+            <li><a href="${appRoot}/" title="AccessKey: h" accesskey="h"><fmt:message bundle="${StandardBundle}" key="link.soporte" /></a>
+        </ul>
+    </div>
+    <div id="footerExtraInfo">
+        <div id="lifechat">
+        <!-- webim button --><a href="https://webin.jkingii.com:444/webin/client.php?locale=sp&amp;style=simplicity" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open('https://webin.jkingii.com:444/webin/client.php?locale=sp&amp;style=simplicity&amp;url='+escape(document.location.href)+'&amp;referrer='+escape(document.referrer), 'webim', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;"><img src="https://webin.jkingii.com:444/webin/b.php?i=mblue&amp;lang=sp" border="0" width="177" height="61" alt=""/></a><!-- / webim button -->
+        </div>
+        <p>Copyright © 2012 ???????????????? Todos los derechos reservados.</p>
+    </div>
+</div>--%><br><br><br><br>
+
+
+<jsp:directive.include file="/WEB-INF/jspf/common/standard/seguimiento.jspf" />

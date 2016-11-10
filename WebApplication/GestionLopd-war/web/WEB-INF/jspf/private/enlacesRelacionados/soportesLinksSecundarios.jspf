@@ -1,0 +1,11 @@
+
+<%@ page pageEncoding="UTF-8" %>
+
+<fieldset class="enlacesRelacionados">
+    <legend>Enlaces relacionados</legend>
+    <ul>
+        <li><a href="${appRoot}/privateArea/tiposSoporte/tiposSoporte.jsp">Tipos de soportes</a></li>
+        <li><a href="${appRoot}/privateArea/modosDestruccion/modosDestruccion.jsp">Modos de destrucción de soportes</a></li>
+        <li><a href="${appRoot}/destinatarios/destinatarios.jsp">Destinatarios de soportes</a></li>
+    </ul>
+</fieldset>

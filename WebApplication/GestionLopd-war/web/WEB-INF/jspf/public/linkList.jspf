@@ -1,0 +1,46 @@
+<%--
+    Document   : headSection
+    Created on : 22-feb-2011, 20:18
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<%--
+<div id="linkList">
+    <!--extra div for flexibility - this list will probably be the trickiest spot you'll deal with -->
+    <div id="linkList2">
+
+        <!-- If you're wondering about the extra &nbsp; at the end of the link, it's a hack to meet WCAG 1 Accessibility. -->
+        <!-- I don't like having to do it, but this is a visual exercise. It's a compromise. -->
+        <div id="lselect">
+            <h3 class="select"><span>Elige destino:</span></h3>
+            <!-- list of links begins here. There will be no more than 8 links per page -->
+            <ul>
+                <li><a href="${appRoot}/index.jsp" title="AccessKey: a" accesskey="a"><fmt:message bundle="${StandardBundle}" key="link.inicio" /></a> <!--by <a href="http://www.mezzoblue.com/" class="c">Dave Shea</a>&nbsp;--></li>
+                <li><a href="${appRoot}/publicArea/tarifas.jsp" title="AccessKey: b" accesskey="b"><fmt:message bundle="${StandardBundle}" key="link.tarifas" /></a> <!--by <a href="http://www.mezzoblue.com/" class="c">Dave Shea</a>&nbsp;--></li>
+                <li><a href="${appRoot}/publicArea/partners.jsp" title="AccessKey: c" accesskey="c"><fmt:message bundle="${StandardBundle}" key="link.partner" /></a> <!--by <a href="http://www.mezzoblue.com/" class="c">Dave Shea</a>&nbsp;--></li>             
+            </ul>
+        </div>
+
+        <div id="larchives">
+            <h3 class="archives"><span>Archives:</span></h3>
+            <ul>
+                <li><a href="/" title="View next set of designs. AccessKey: n" accesskey="n"><span class="accesskey">n</span>ext designs &raquo;</a>&nbsp;</li>
+                <li><a href="/" title="View previous set of designs. AccessKey: p" accesskey="p">&laquo; <span class="accesskey">p</span>revious designs</a></li>
+                <li><a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="View every submission to the Zen Garden. AccessKey: w" accesskey="w">Vie<span class="accesskey">w</span> All Designs</a></li>
+            </ul>
+        </div>
+
+        <div id="lresources">
+            <h3 class="resources"><span>Resources:</span></h3>
+            <ul>
+                <li><a href="http://www.csszengarden.com/001/001.css" title="View the source CSS file for the currently-viewed design, AccessKey: v" accesskey="v"><span class="accesskey">V</span>iew This Design&#8217;s <acronym title="Cascading Style Sheets">CSS</acronym></a></li>
+                <li><a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS. AccessKey: r" accesskey="r"><acronym title="Cascading Style Sheets">CSS</acronym> <span class="accesskey">R</span>esources</a></li>
+                <li><a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden. AccessKey: q" accesskey="q"><acronym title="Frequently Asked Questions">FA<span class="accesskey">Q</span></acronym></a>&nbsp;</li>
+                <li><a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file. AccessKey: s" accesskey="s"><span class="accesskey">S</span>ubmit a Design</a></li>
+                <li><a href="http://www.mezzoblue.com/zengarden/translations/" title="View translated versions of this page. AccessKey: t" accesskey="t"><span class="accesskey">T</span>ranslations</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+--%>

@@ -1,0 +1,576 @@
+/* CSS released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2011, Security Technologies */
+/* Created on : 13-feb-2011, 08:39 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 13px Arial,Helvetica,sans-serif;
+    /*background: url("../images/backGround.png") repeat scroll 50% 0 #E2EBED;*/
+    background-color: #ffffff;
+    text-align: center;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    color: #307082;
+}
+
+a:hover {
+    color: #D60808;
+}
+
+acronym {
+    border: none;
+}
+
+/*#preamble h3 span, #appContent2 h3 span, #appContent1 h3 span, #participation h3 span,
+#benefits h3 span, #requirements h3 span, #lresources h3.resources span,
+#larchives h3.archives span, #lselect h3.select {
+    font-family: Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    color: black;
+    font-size: 14px;
+}*/
+
+#container {
+    margin: 0 auto;
+    width: 724px;
+    position: relative;
+    /*background-image: url("../images/backGround3.png");*/
+    padding: 0 10px 0 10px;
+    text-align: left;   
+    width: 790px;
+}
+
+* html #container {
+    width: 744px;
+}
+
+#pageHeader {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+}
+
+#hormigas ul{
+    /*padding-left: 232px;*/
+    padding-top: 230px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    list-style-type: none;
+}
+
+#hormigas ul li {
+    display: inline;
+}
+
+#hormigas ul li a {
+    text-decoration: none;
+}
+
+h1 {
+/*    background: url("logo.gif");*/
+    width: 156px;
+    height: 25px;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1 span {
+    display: none;
+}
+
+h2 {
+    font-size: 12px;
+    margin: 0;
+}
+
+#extraHeader .p2 {
+    font-size: 12px;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    margin: 0;
+}
+
+#container #intro #extraHeader /*.p1*/ {
+    /*font-size: 11px;*/
+    height: 240px;
+    background: url("../images/banner_t.png") no-repeat 0 0 transparent;
+    margin: 0;
+    /*width: 764px;*/
+    /*color: #ffffff;*/
+    /*font: 12px/150% Trebuchet MS;*/
+    padding-top: 50px;
+}
+
+#container #intro #extraHeader .p1  span {
+    padding: 30px 530px 0 30px;
+    display: block;
+    margin: 0;
+    font: 12px/150% Trebuchet MS;
+}
+
+#preamble, #contentArea {
+    margin: 0 45px 0 35px;
+}
+
+#appArea {
+    /*padding-left: 20px;
+    width: 510px;*/
+}
+
+.cbCellDesc {
+    font-size: 14px;
+    margin: 3px;
+}
+
+#contentArea {
+    display: table;
+    width: 700px;
+}
+
+#contentRow {
+    display: table-row;
+}
+
+#linkList, #appArea {
+    display: table-cell;
+}
+
+#contentArea p, #preamble p {
+    line-height: 150%;
+    margin: 10px 0 10px 0;    
+    text-align: justify;
+}
+
+#preamble h3 {
+    width: 200px;
+    height: 24px;
+    margin: 0 0 10px 0;
+}
+
+h3, h3 span, h2, h1{
+    /*width: 200px;*/
+/*    height: 24px;
+    margin: 40px 0 10px 0;*/
+    clear: both;
+    color: #307082;
+    /*font-family: "Lato",​"Helvetica Neue",​Helvetica,​Arial,​sans-serif;*/
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 100%;
+    margin: 25px 0 17px;
+    text-align: left;
+    /*font-variant: small-caps;*/   
+    letter-spacing: -1px;
+    /*text-transform:capitalize;*/
+}
+
+#requirements {
+    margin-bottom: 40px;
+}
+
+#linkList {
+    left: 400px;
+    position: absolute;
+    top: 55px;
+    width: 370px;
+    text-align: right;
+}
+
+.select {
+    display: none;
+}
+
+#lselect ul, #larchives ul, #lresources ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 40px;
+}
+
+#lselect ul li a {
+    text-decoration: underline;
+    display: block;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    
+}
+
+#lselect ul li.c, #lselect ul li a.c {
+    display: inline;
+    font-size: 12px;
+    color: #333;
+}
+
+#lselect ul li a.c {
+    text-decoration: none;
+}
+
+#lselect ul li a.c:hover {
+    color: #D60808;
+}
+
+#lselect ul li {
+    /*font-size: 12px;*/
+    border: 1px solid #BBBBBB;
+    display: inline-block;
+    width: 80px;
+    border-radius: 4px;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#linkList #larchives ul li {
+    font-size: 13px;
+    border-bottom: 1px solid #E6EEF0;
+    display: block;
+    padding: 5px 0;
+}
+
+#linkList #lresources ul li {
+    font-size: 13px;
+    border-bottom: 1px solid #E6EEF0;
+    display: block;
+    padding: 5px 0;
+}
+
+#lresources, #larchives {
+    display: none;
+}
+
+
+#lresources h3.resources {
+    background: url("resources.gif") no-repeat;
+    width: 69px;
+    height: 15px;
+    margin: 30px 0 5px 40px;
+}
+
+#larchives h3.archives {
+    background: url("archives.gif") no-repeat;
+    width: 69px;
+    height: 15px;
+    margin: 30px 0 5px 40px;
+}
+
+#appContent3 {
+    text-align: center;
+}
+
+#appContent3 h3 {
+    text-align: left;
+}
+
+ol {
+  font: italic 1em Georgia, Times, serif;
+  font-size: 21px;
+  color: #999999;
+}
+
+ol p {
+  font: normal .8em Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 13px;
+}
+
+/*********************************************************/
+/*              Estilos de formularios                   */
+/*********************************************************/
+
+.p1 {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+.p1 span {
+    font-weight: normal;
+    text-transform: none;
+    font-variant: normal;
+}
+
+.formStyle {
+    display: table;
+    width: 100%
+}
+
+.formStyle .formEntry {
+    display: table-row;
+    text-align: left;
+    height: 30px;
+}
+
+.formStyle .formDesc {
+    display: table-cell;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.formStyle .formData {
+    display: table-cell;
+    vertical-align: middle;
+    width: 200px;
+}
+
+.formStyle .formBox {
+    width: 100%;
+}
+
+.formStyle .formBoxMedio {
+    width: 50%;
+}
+
+.formStyle .formBoxSmall {
+    width: 25%;
+}
+
+.formStyle .formBox, .formStyle .formBoxMedio, .formStyle .formBoxSmall {
+    border: 1px solid #7f9bd9;
+    margin-right: 5px;
+}
+
+.formStyle .formBoxRed, .formStyle .formBoxMedioRed, .formStyle .formBoxSmallRed {
+    border: 2px solid red;
+}
+
+.formStyle .formBox:blur, .formStyle .formBoxMedio, .formStyle .formBoxSmall {
+    border: 1px solid #7f9bd9;
+}
+
+.formStyle .formBox:focus, .formStyle .formBoxMedio:focus, .formStyle .formBoxSmall:focus {
+    outline: 2px solid deepskyblue;
+    border: 2px solid #ffffff;
+}
+
+.formStyle .formText {
+    width: 130px;
+}
+
+#formSend {
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+#formSend p {
+    text-align: center;    
+}
+
+.sendButton {
+    text-align: center;
+    /*width: 75px;*/
+    width: auto;
+    height: 22px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    border: 1px solid black;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+}
+
+.sendButton:hover {
+    background-color: #9F9F9F;
+}
+
+#datosRequeridos {
+    display: none;
+    color: red;
+}
+
+#lostPassForm {
+    margin-left: 50px;
+    text-align: right;
+}
+
+#lostPassForm label {
+    text-align: right;
+    padding-right: 20px;
+}
+
+#lostPassForm input[type="text"] {
+    margin-right: 5px;
+}
+
+.formInfo {
+    text-align: center !Important;    
+    font-style: italic;
+    color: #a0a0a0;
+    font-weight: bolder;
+}
+
+/*********************************************************/
+/*              Estilos Mostrando Datos                  */
+/*********************************************************/
+
+.showDataEntry {    
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.minInfo {
+    width: 225px;
+}
+
+.medInfo {
+    width: 300px;
+}
+
+.maxInfo {
+    width: 100%;
+}
+
+.showText {
+    margin: 0 !Important;
+    text-align: left !Important;
+}
+
+/**
+ * Estilos de mensajes de respuesta al recuperar la contraseña.
+ */
+ 
+ #callinfo {
+     margin-top: 20px;
+ }
+
+/**
+ * Estilos de productos, página inicio pública.
+ */
+ #productos, #productos ul {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+ }
+ 
+ #producto1, #producto2, #producto3, #producto4 {
+     display: inline-block;
+     width: 300px;
+     height: 280px;
+ }
+ 
+/* #producto1 {
+     background: url("../images/productos/producto1.png") no-repeat;
+ }
+ 
+ #producto2 {
+     background: url("../images/productos/producto2.png") no-repeat;
+ }
+ 
+ #producto3 {
+     background: url("../images/productos/producto3.png") no-repeat;
+ }
+ 
+ #producto4 {
+     background: url("../images/productos/producto4.png") no-repeat;
+ }*/
+
+
+/**
+ * Políticas de Uso y Privacidad
+ */
+
+.privacidad h1, .privacidad h2, .privacidad h3 {
+    text-align: left !Important;
+    width: 100% !Important;
+}
+ 
+ #politicaUsoPrivacidad {
+     line-height: 150%;
+     margin: 10px 0;
+     text-align: justify;     
+ }
+ 
+ #politicaUsoPrivacidad h1, #politicaUsoPrivacidad h2, #politicaUsoPrivacidad h3 {
+     width: 100%;
+     clear: both;
+     color: #307082;
+     font-weight: bold;
+     letter-spacing: -1px;
+     line-height: 100%;
+     margin: 25px 0 17px;
+     text-align: left;
+ }
+ 
+ #politicaUsoPrivacidad h1 {
+     font-size: 26px;     
+ }
+ 
+ #politicaUsoPrivacidad h2 { 
+     font-size: 20px;         
+ }
+ 
+ #politicaUsoPrivacidad h3 { 
+     font-size: 15px;         
+ }
+
+/**
+ * Estilos pié público.
+*/
+
+
+#footer {
+    /*background: url("../images/noise.png") repeat scroll 0 0 lightgrey;*/
+    /*color: #fff;*/
+    /*height: 40px;*/
+    text-align: center;
+    line-height: 26px;
+    font-size: 11px;
+    margin: 20px 0;
+    padding-top: 20px;
+    /*border-radius: 5px 5px 0 0;*/
+    border-top: 1px dashed lightgray;
+    border-bottom: 1px dashed lightgray;
+    vertical-align: text-top;
+}
+
+.ulfooter {
+    /*position: relative;*/
+    text-align: left;
+    display: inline-block;
+    width: 150px;
+    margin: 0 20px;
+    vertical-align: text-top;
+}
+
+.ulfooter h1 {
+    font-size: 16px;
+    height: 20px;
+}
+
+#footer a {
+/*    color: #fff;*/
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footerExtraInfo {
+    text-align: center;
+    border-top: 1px dashed lightgray;
+}
+
+#lifechat {
+    position:fixed; right: 17px; bottom: 17px;
+}
+
+.error {
+    color: red;
+}
+
+#caracteristicas li {
+    list-style-type: none;
+}
+
+#contacto {
+    margin: 30px 0;    
+}

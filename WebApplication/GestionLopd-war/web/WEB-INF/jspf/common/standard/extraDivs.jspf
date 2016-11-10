@@ -1,0 +1,14 @@
+<%-- Utilizarlos para añadir información extra --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<%--
+    Para el estado de llamadas de json.
+    Estado de la aplicación.
+--%>
+<div id="appStatus"><span></span></div>
+<%--
+    Param mensajes que tiene que visualizar el usuario.
+    Mensajes de aplicación.
+--%>
+<div id="appMessages"><span></span></div>
+<div id="extraInfo3"><span></span></div>

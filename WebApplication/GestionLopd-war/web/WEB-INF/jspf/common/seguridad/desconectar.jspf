@@ -1,0 +1,12 @@
+<%-- 
+    Autor: Eduardo L. García Glez.
+    Fecha: 08 de jun de 2012
+    Desc:
+        Desconecta al usuario del sistema.
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<div id="desconectar">
+    <a href="${appRoot}/privateArea/desconectar.jsp">
+        <fmt:message bundle="${StandardBundle}" key="label.desconectar" />
+    </a>
+</div>

@@ -1,0 +1,27 @@
+<%--
+    Document   : datosEmpresa
+    Created on : 28-feb-2011, 13:55
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.2
+    Modificaciones:
+        14 de mar de 2011 Añadido el listado de formas de pago por consulta a DB.
+        16 de mar de 2011 Añadido formato para poder controlar el envío en los formularios.
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<jsp:useBean id="formaPagoBean" class="com.openlopd.common.facturacion.TiposFormaPago" scope="request" />
+<jsp:setProperty property="*" name="formaPagoBean" />
+<h3 style="display: none;"><span><fmt:message bundle="${StandardBundle}" key="title.formaPago" /></span></h3>
+<div class="formStyle" style="display: none;">
+    <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.tipoFormaPago" />: (*)</span></div>
+        <div class="formData">
+            <select id="SelectformaPago" name="formaPago">
+                <%--<option value="-1"><fmt:message bundle="${StandardBundle}" key="option.sinAsignar" /></option>--%>
+                <c:forEach items="${formaPagoBean.activas}" var="formaPago" >
+                    <c:out escapeXml="false" value="<option value=\"${formaPago.id}\">" />
+                    <fmt:message bundle="${StandardBundle}" key="${formaPago.nombre}" />
+                    <c:out escapeXml="false" value="</option>" />
+                </c:forEach>
+            </select>
+        </div>
+    </div>
+</div>

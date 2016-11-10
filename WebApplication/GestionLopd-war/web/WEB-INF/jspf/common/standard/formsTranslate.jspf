@@ -1,0 +1,16 @@
+<%-- Internacionalización de los formularios --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<fmt:message var="titleActualizar" bundle="${StandardBundle}" key="form.title.Actualizacion" scope="page" />
+<fmt:message var="titleActualizar" bundle="${StandardBundle}" key="form.title.alta" scope="page" />
+
+
+<fmt:message var="buttonAlta" bundle="${StandardBundle}" key="button.alta" scope="page" />
+<fmt:message var="buttonBorrar" bundle="${StandardBundle}" key="button.borrar" scope="page" /> 
+<fmt:message var="buttonAcceder" bundle="${StandardBundle}" key="button.acceder" scope="page" /> 
+<fmt:message var="buttonEnviar" bundle="${StandardBundle}" key="button.enviar" scope="page" />                    
+<fmt:message var="buttonCancelar" bundle="${StandardBundle}" key="button.cancelar" scope="page" />                   
+<fmt:message var="buttonContinuar" bundle="${StandardBundle}" key="button.continuar" scope="page" />                   
+<fmt:message var="buttonSiguiente" bundle="${StandardBundle}" key="button.siguiente" scope="page" />                   
+<fmt:message var="buttonAnterior" bundle="${StandardBundle}" key="button.anterior" scope="page" />
+

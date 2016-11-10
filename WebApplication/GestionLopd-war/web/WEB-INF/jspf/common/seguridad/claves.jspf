@@ -1,0 +1,14 @@
+<%--
+    Contiene dos campos destinados a contraseñas, util para establecer las
+    contraseñas en las altas de nuevos contratos 
+
+    Document   : Claves
+    Created on : 15-mar-2011
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<%@ page pageEncoding="UTF-8" %>
+
+        <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.clave" /> (*)</span></div><div class="formData"><input type="password" id="clave" name="clave" class="formBoxMedio" value="" size="16" maxlength="32"/></div></div>
+        <div class="formEntry"><div class="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label.claveConfirmar" /> (*)</span></div><div class="formData"><input type="password" id="claveconfirmacion" name="claveconfirmacion" class="formBoxMedio" value="" size="16" maxlength="32"/></div></div>
+

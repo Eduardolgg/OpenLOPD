@@ -1,0 +1,14 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<%--
+    Document   : datosEmpresa
+    Created on : 28-feb-2011, 13:55
+    Author     : Eduardo L. Garcia Glez.
+    Versión    : 1.0.0
+--%>
+<div id="formStyle">
+    <div id="formEntry"><div id="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label." /></span></div><div id="formData"><input id="bBanco" class="formBoxSmall" type="text" name="bBanco" value="" /></div></div>
+    <div id="formEntry"><div id="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label." /></span></div><div id="formData"><input id="bSucursal" class="formBoxSmall" type="text" name="bSucursal" value="" /></div></div>
+    <div id="formEntry"><div id="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label." /></span></div><div id="formData"><input id="bDc" class="formBoxSmall" type="text" name="bDc" value="" /></div></div>
+    <div id="formEntry"><div id="formDesc"><span class="formText"><fmt:message bundle="${StandardBundle}" key="label." /></span></div><div id="formData"><input id="bCuenta" class="formBoxSmall" type="text" name="bCuenta" value="" /></div></div>
+</div>

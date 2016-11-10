@@ -1,0 +1,119 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%-- 
+    Información de estado del usuario de área privada.
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<jsp:useBean id="cLinkList" class="com.openlopd.web.controllers.privatearea.CLinkList" scope="session" />
+<jsp:setProperty name="cLinkList" property="accessInfo" value="${cSession.accessInfo}" />
+<div id="empInfo" class="statusBlockInfo">
+    <p><label>Usuario:</label> <span><c:out value="${cSession.accessInfo.userInfo.usuario}" /></span></p>
+    <p><label>Cif:</label> <span><c:out value="${cSession.accessInfo.userInfo.cif}" /></span></p>
+    <p><label>Razón Social:</label> <span><c:out value="${cSession.accessInfo.empresa.razonSocial}" /></span></p>
+    <c:if test="${!cSession.accessInfo.empresa.razonSocial.equals(cSession.accessInfo.subEmpresa.razonSocial)}">
+        <p><label>Razón Social Subempresa:<span></label> <span><c:out value="${cSession.accessInfo.subEmpresa.razonSocial}" /></span></p>    
+    </c:if>
+</div>
+<div id="lopdInfo" class="statusBlockInfo">
+    <label>Responsable del fichero</label><p>${cSession.accessInfo.subEmpresa.razonSocial}</p>
+    <label>Responsable de Seguridad</label><p>${cSession.auxTables.responsableSeguridad.nombreCompleto}</p>
+</div>
+<div id="guia" class="statusBlockInfo">
+    <div id="progress">
+        <label for="statusProgressBar">${cLinkList.porcentajeCompletado}% Completado</label>
+        <div id="statusProgressBar"></div>
+    </div>
+    <div id="recomendacion">
+        <c:set var="opRecomendada" value="${cLinkList.operacionRecomendada}" />
+        <c:if test="${opRecomendada != null}">
+            <label for="" title="" style="display: block">Siguiente Operación Recomendada:</label><a href="${opRecomendada.operacion.link}"><c:out value="${opRecomendada.operacion.operacion}" /></a>
+        </c:if>
+    </div>
+</div>
+        <div id="hst"></div>
+<script type="text/javascript">
+    function updateData() {
+        $("#hst").load("${appRoot}/privateArea/info/info.jsp", {i: 'status', locale:'es_ES'},
+           //TODO: Informar de la pérdida de conectividad antes de redireccionar.
+           function(response, status, xhr){
+               if (status == "error" || response == "error"){
+                   $(location).attr('href', '${appRoot}');
+               }
+           }
+        );
+    }
+    
+    function checkActividadPrincipal(actividad) {
+        if (actividad == '') {
+            var htmlCode = '<div id="actSetDialog" style="margin: 15px">'
+            + '<h1>¿Cuál es tu actividad principal?</h1>'
+            + '<p style="text-align: justify;">Antes de empezar debes decirnos cuál es tu actividad '
+            + 'principal, es necesaria para las comunicaciones con la Agencia '
+            + 'Española de Protección de Datos.</p>'
+            + '<p style="text-align: justify;">En el siguiente listado puedes '
+            + 'seleccionar una de las actividades que la Agencia Española de '
+            + 'Protección de Datos define, si no encuentras una actividad que '
+            + 'se adecue a las actividades de tu empresa puedes seleccionar la '
+            + 'actividad que se muestra en último lugar llamada “Otras '
+            + 'Actividades”.</p>'
+            //+ '<label for="respActividad">Actividad</label>'
+            + '<form id="respActForm"><select name="respActividad" id="respActividad" class="required" '
+            + 'style="width: 100%; margin-bottom: 7px;">'
+            + '<option></option>'
+            <c:forEach var="actividad" items="${cSession.auxTables.tipoActividadPrincipal}">
+            +   '<option value="${actividad.id}">${actividad.descripcion}</option>'
+            </c:forEach>
+            + '</select></form><br>'
+            + '<input type="button" id="actSetSend" value="Guardar" '
+            + 'style="float:right; margin-bottom: 7px;"/>'
+            + '</div>';
+           $("#appMessages").html(htmlCode);
+           $.blockUI({message: $('#actSetDialog'), css: {width: '500px', margin: '15px', top: '20%'}});
+        }
+    }
+    
+    $(document).ready(function(){
+        $("#statusProgressBar").progressbar({
+            value: ${cLinkList.porcentajeCompletado}
+        });
+        updateData();
+        timer = setInterval("updateData()", 20000);
+        
+        checkActividadPrincipal('${cSession.accessInfo.subEmpresa.actividad}');
+        $("#actSetSend").click(function() {
+           if (!$("#respActForm").validate().form()) {
+               return;
+           }
+           $.blockUI({message: "<h1>Guardando...</h1>"});
+           $.ajax({
+               url:'${appRoot}/privateArea/laempresa/UpdateData.jsp?value=' + $("#respActividad").val(),
+               cache: false,
+               complete: function() {
+                    $.unblockUI();
+                    if (typeof listEmpresasTable != 'undefined') {
+                        listEmpresasTable.fnPageChange( 'first' );
+                    }
+               }
+           });
+           $("#appMessages").empty();
+        });
+            
+    });
+</script>
+
+<!-- [if lt IE 10]>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var msg = '<div id="iemsg" title="Info" >'
+                + '<p>Su navegador es incompatible, le recomendamos utilizar los siguientes:</p>'
+                + '<ul style=" list-style-type:none;">'
+                + '<li><a href="http://www.mozilla.org/es-ES/firefox/new/"><img src="http://mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06/"></a></li>'        
+                + '<li><a href="https://www.google.com/intl/es/chrome/browser/?hl=es"><img src="https://www.google.com/intl/es/chrome/assets/common/images/chrome_logo_2x.png"></a></li>'
+                + '</ul><p>También puede descargar <a href="http://windows.microsoft.com/es-es/internet-explorer/ie-10-worldwide-languages">IE 10</a> para usar la aplicación</p></div>';
+        $("#appMessages").empty().append(msg);
+        $("#iemsg").dialog({modal:true, width:400});
+     });
+</script>
+<![endif]-->
+
+
+

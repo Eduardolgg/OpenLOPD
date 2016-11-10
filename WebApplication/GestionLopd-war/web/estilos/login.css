@@ -1,0 +1,69 @@
+/* 
+    Document   : login
+    Created on : 22-feb-2011, 19:27:22
+    Author     : Eduardo L. García Glez.
+    Description:
+        Estilos para la página de login.
+*/
+
+#appContent1 h3, #appContent1 h2 {
+    text-align: center;
+}
+
+#login {
+    text-align: center;
+}
+
+#loginControl {
+/*    padding: 10px 0 0 470px;*/
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px dashed lightgray;
+    height: 100px;
+    /*margin-bottom: 200px;*/
+    margin-bottom: 10px;
+}
+
+#loginUsuario {
+    display: block;    
+    margin-right: 50px;
+    float: right;
+    /*width: 310px;*/
+}
+
+#loginClave {
+    display: block;
+    /*width:310px;*/    
+    margin-right: 50px;
+    padding-top: 5px;
+    float: right;
+}
+
+#sendButton {
+    display: block;
+    /*width: 300px;*/
+    /*padding: 5px 0 0 218px;*/
+    float: right; 
+    margin-right: 60px;
+    margin-top: 5px;
+    /*margin: 5px auto;
+    padding-left: 50px;*/
+}
+
+#sendButton .loginButton {
+    display: block;
+}
+
+#loginControl input {
+}
+
+#loginRecuperarClave {
+    display: block;
+    /*text-align: center;*/
+    /*padding: 5px 0 200px 0;*/
+    float: right;
+    margin-right: 60px;
+    margin-top: 6px;
+}
