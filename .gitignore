@@ -10,3 +10,12 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# netbeans directories
+build
+dist
+private/**
+/WebApplication/nbproject/private/
+/WebApplication/GestionLopd-war/nbproject/private/
+/WebApplication/GestionLopd-ejb/nbproject/private/
+/WebApplication/common-ejb/nbproject/private/
